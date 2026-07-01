@@ -1,6 +1,5 @@
 use("santeconnect");
 
-db.patients.createIndex({_id: 1}, {unique: true});
 db.patients.createIndex({nir_hash: 1}, {unique: true});
 db.patients.createIndex({nom: 1, prenom: 1, date_naissance: 1});
 db.consultations.createIndex({patient_id: 1, date: -1});
